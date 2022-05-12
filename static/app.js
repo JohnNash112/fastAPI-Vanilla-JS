@@ -77,39 +77,3 @@ btn.addEventListener('click', get);
 
 const send_btn = document.getElementById('send');
 send_btn.addEventListener('click', send_data);
-
-
-
-
-
-/* react app
-
-function App() {
-
-  useEffect(()=>{
-    axios.get('http://localhost:8000/api/todo')
-    .then(res=>{
-      console.log(res.data)
-    })
-  });
-//post
-  const send_data = () =>{
-    axios.post('http://localhost:8000/api/analyse', {'timestamp': 'india', 'latitude': '34.3', 'longtitude': '34.566'})
-    .then(res => console.log(res))
-  }
-
-  return (
-      <div className='App list-group-item justify-content-center align-items-center mx-auto' style={{"width": "400px", "backgroundColor": "white", "marginTop": "15px"}}>
-      <h1 className='card text-white bg-primary mb-2' styleName="max-width:20rem;">Driving Behavior Analysis</h1>
-        <button id="start" type="button" className="card btn btn-outline-success btn-lg mb-3" style={{'borderRadius': '50px'}}>Start Tracking</button>
-        <button id="end" type="button" className="card btn btn-outline-danger btn-lg mb-3" style={{'borderRadius': '50px'}}>End Tracking</button>
-        <button id="action" type='button' className="card mb-3" style={{'borderRadius': '50px'}}>Download csv</button>
-      
-      </div>
-
-      
-  );
-}
-
-export default App;
-*/
